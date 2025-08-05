@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+*.env
+*.venv
+quiz_env/
+
+# Django stuff
+db.sqlite3
+*/migrations/__pycache__/
+*/migrations/*.py[cod]
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Secret files
+.env
+pip-selfcheck.json
+
+# Static files
+staticfiles/

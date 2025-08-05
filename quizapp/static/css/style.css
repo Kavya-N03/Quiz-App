@@ -1,0 +1,209 @@
+body {
+    background-color: #F5F8FF;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.nav-bar {
+    background-color: #007bff; 
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+/* Home */
+
+
+.nav-bar h1 {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* All links */
+.nav-bar a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: #FFD700; 
+}
+
+/* Intro text */
+.quiz-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Quiz container */
+.quiz-list {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    background-color: #F5F8FF;
+    padding: 0 40px;
+}
+
+/* Quiz cards */
+.quiz-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.quiz-card h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Start quiz button */
+.start-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Messages */
+.messages {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Quiz title */
+.quiz-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #007BFF; 
+}
+
+/* Instructions */
+.quiz-instruction {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #444; 
+}
+
+/* Timer */
+.quiz-timer{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Question list container */
+.question-list {
+    padding: 0 20px;
+}
+
+/* Each question box */
+.question-block {
+    background-color: #e0f7ff; 
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #b3e5fc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Question text */
+.question-block h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+/* Answer options */
+.answer-option {
+    font-size: 16px;
+    display: block;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Submit button section */
+.submit-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Submit button */
+.submit-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #00aaff; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #081d26; 
+}
+
+
+.result-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #5aad2369; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.result-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(45, 39, 39);
+}
+
+.result-container p {
+    font-size: 18px;
+    color: rgb(45, 39, 39); 
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.result-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result-container a:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
