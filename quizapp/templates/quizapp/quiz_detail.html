@@ -1,0 +1,32 @@
+{% extends 'quizapp/base.html' %}
+
+{% block title %}{{ quiz.name }}{% endblock %}
+
+{% block content %}
+<h1 class="quiz-title">{{ quiz.name }}</h1>
+<p class="quiz-instruction">Each question carries 5 points. Choose the correct answer below:</p>
+<div class="quiz-timer">
+    ⏰<strong>Time Left:</strong><span id="time">2:00</span>
+</div>
+
+<form method="post" onsubmit="return validQuiz()">
+    {% csrf_token %}
+    <div class="question-list">
+        {% for question in questions %}
+            <div class="question-block">
+                <h3>{{ forloop.counter }}. {{ question.question_text }}</h3>
+                {% for answer in question.answers.all %}
+                    <label class="answer-option">
+                        <input type="radio" name="{{ question.id }}" value="{{ answer.id }}">
+                        {{ answer.answer_text }}
+                    </label><br>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="submit-section">
+        <button type="submit" class="submit-btn">Submit</button>
+    </div>
+</form>
+{% endblock %}

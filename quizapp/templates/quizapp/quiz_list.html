@@ -1,0 +1,26 @@
+{% extends 'quizapp/base.html' %}
+{% block title %}Available Quizzes{% endblock %}
+
+{% block content %}
+<div class="quiz-intro">
+    <h1>Sharpen Your Web Development Skills with Fun CS Quizzes!</h1>
+    <h3>Choose a Quiz Below to Get Started</h3>
+</div>
+
+<div class="quiz-list">
+    {% for quiz in quizzes %}
+        <div class="quiz-card">
+            <h2>{{ quiz.name }}</h2>
+            <a href="{% url 'quiz_detail' quiz.id %}" class="start-btn">Start Quiz</a>
+        </div>
+    {% empty %}
+        <p>No quizzes available!</p>
+    {% endfor %}
+</div>
+
+<div class="messages">
+    {% for message in messages %}
+        <p style="color: rgb(4, 120, 4);">{{ message }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

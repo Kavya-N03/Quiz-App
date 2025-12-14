@@ -1,0 +1,35 @@
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+env/
+_env/
+venv/
+.venv/
+envv/
+
+# Django database (SQLite)
+db.sqlite3
+db.sqlite3-journal
+
+# Environment variable files
+.env
+
+# Static file collection (e.g., for Whitenoise)
+staticfiles/
+
+# Django logs
+*.log
+
+# Local settings (if any)
+local_settings.py
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
